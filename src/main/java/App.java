@@ -1,6 +1,6 @@
-package design.solid;
 
-import design.solid.WithoutDependencyInversion.Display;
+
+import design.WithoutDependencyInjection.Display;
 
 /**
  * Hello world!

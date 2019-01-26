@@ -1,4 +1,4 @@
-package design.solid.WithDependencyInversion;
+package design.WithDependencyInjection;
 
 public class Display {
 	

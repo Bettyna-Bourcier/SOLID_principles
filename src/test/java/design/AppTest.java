@@ -1,9 +1,7 @@
-package design.solid;
+package design;
 
-import org.mockito.Mock;
-
-import design.solid.WithDependencyInversion.WeatherStation;
-import design.solid.WithoutDependencyInversion.Display;
+import design.WithDependencyInjection.WeatherStation;
+import design.WithoutDependencyInjection.Display;
 import junit.framework.TestCase;
 
 import static org.mockito.Mockito.*;
@@ -30,7 +28,7 @@ public class AppTest
     	WeatherStation weatherStation = mock(WeatherStation.class);
     	
     	when(weatherStation.getTempeture()).thenReturn(2);
-        design.solid.WithDependencyInversion.Display display = new design.solid.WithDependencyInversion.Display(weatherStation);
+        design.WithDependencyInjection.Display display = new design.WithDependencyInjection.Display(weatherStation);
         
         String iconWeather = display.displayWeatherIcon();
         
